@@ -86,7 +86,7 @@ nav {
     }
     .sidenav {
       display: flex;
-      position: absolute;
+      position: fixed;
       height: 100vh;
       right: 0;
       top: 0;
