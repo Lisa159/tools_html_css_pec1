@@ -1,2 +1,13 @@
-const name = 'world';
-console.log(`Hello ${name}`);
+let openedSidenav = false;
+
+function openSidenav() {
+  const display = openedSidenav ? "none" : "inline";
+  const transforValue = openedSidenav ? "translateX(100vw)" : "translateX(0px)";
+  document
+    .getElementById("responsive")
+    .getElementsByClassName("sidenav")[0].style.transform = transforValue;
+  document
+    .getElementById("responsive")
+    .getElementsByClassName("overlay")[0].style.display = display;
+  openedSidenav = !openedSidenav;
+}
