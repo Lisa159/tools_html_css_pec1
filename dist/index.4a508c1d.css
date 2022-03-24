@@ -29,6 +29,9 @@ body {
   flex-direction: column;
   margin: 0;
   min-height: 100vh;
+  background-image: url("map.1537fe39.jpg");
+  background-size: cover;
+  overflow-x: hidden;
 }
 
 /******** Navegation bar ********/
@@ -182,14 +185,24 @@ nav #logoContainer a {
   height: 55px;
 }
 
+.detailsContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
+
+/******** Aside ********/
+
+aside {
+  margin: 20px;
+}
+
 /******** Main ********/
 
 main {
   flex: 1 0 auto;
   width: inherit;
   height: 100%;
-  background-image: url("map.1537fe39.jpg");
-  background-size: cover;
   padding: 20px;
 }
 
@@ -254,7 +267,8 @@ main {
 #presentacion div,
 #presentacion article,
 #details div,
-#details article {
+#details article,
+aside {
   background-color: #ffffff;
   border-radius: 4px;
 }
@@ -297,11 +311,11 @@ a:active {
   margin: 10px;
 }
 
+#details {
+  flex: auto;
+}
+
 #details article {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-  padding: 20px;
   padding-bottom: 38px;
 }
 
@@ -370,7 +384,11 @@ footer div {
 
 /******** Responsive ********/
 
-@media screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) {
+  .detailsContainer {
+    flex-direction: row;
+  }
+
   #responsive {
     display: none !important;
   }
@@ -425,6 +443,10 @@ footer div {
   #presentacion article.adaptation iframe {
     width: 540px;
     height: 295px;
+  }
+
+  body {
+    flex-direction: column;
   }
 }
 /*# sourceMappingURL=index.4a508c1d.css.map */
