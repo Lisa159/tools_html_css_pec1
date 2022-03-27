@@ -11,9 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,800;1,400&display=swap"
       rel="stylesheet"
     />
-    <script type="text/javascript" src="../app.js"></script>
   </head>
-  <body>
+  <body data-bg="../assets/img/map.jpg">
     <nav>
       <div id="logoContainer" href="">
         <a href="../index.html" tabindex="-1"></a>
@@ -127,9 +126,11 @@
       <aside id="about">
         <figure>
           <img
-            src="../assets/img/1_juego_de_tronos.jpeg"
             alt="Portada de Juego de Tronos"
             title="Portada de Juego de Tronos"
+            class="lazy"
+            data-src="../assets/img/1_juego_de_tronos.jpeg"
+            src="../assets/img/1_juego_de_tronos.jpeg"
           />
           <figcaption>
             <cite>Foto de la portada de Juego de Tronos</cite> por Aida María
@@ -137,18 +138,7 @@
           </figcaption>
         </figure>
         <h3>Capítulos del libro desde el punto de vista de Daenerys</h3>
-        <ul class="chapters">
-          <li>Capítulo 3</li>
-          <li>Capítulo 11</li>
-          <li>Capítulo 23</li>
-          <li>Capítulo 36</li>
-          <li>Capítulo 46</li>
-          <li>Capítulo 54</li>
-          <li>Capítulo 61</li>
-          <li>Capítulo 64</li>
-          <li>Capítulo 68</li>
-          <li>Capítulo 72</li>
-        </ul>
+        <ul class="chapters"></ul>
       </aside>
     </div>
     <footer>
@@ -157,5 +147,8 @@
         <p>Aida María González Fernández</p>
       </div>
     </footer>
+
+    <script type="text/javascript" src="../app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.6.1/dist/lazyload.min.js"></script>
   </body>
 </html>

@@ -13,7 +13,7 @@
     />
     <script type="text/javascript" src="app.js"></script>
   </head>
-  <body>
+  <body data-bg="./assets/img/map.jpg">
     <nav>
       <div id="logoContainer" href="">
         <a href="index.html" tabindex="-1"></a>
@@ -52,6 +52,8 @@
             src="assets/img/dany.jpg"
             alt="Foto de Daenerys Targaryen"
             title="Foto de Daenerys Targaryen"
+            class="lazy"
+            data-src="assets/img/dany.jpg"
           />
           <figcaption>
             <cite>Daenerys Targaryen</cite> por Aida Maria Gonzalez Fernandez.
@@ -68,8 +70,9 @@
           /dəˈnɛərɪs tɑrˈɡɛərɪən/) es un personaje ficticio de la serie de
           libros <cite>Canción de hielo y fuego</cite>, escrita por George R. R.
           Martin. Daenerys es uno de los personajes principales y posee
-          capítulos narrados desde su punto de vista en Juego de tronos, Choque
-          de reyes, Tormenta de espadas y Danza de dragones.
+          capítulos narrados desde su punto de vista en
+          <cite>Juego de tronos</cite>, <cite>Choque de reyes</cite>,
+          <cite>Tormenta de espadas</cite> y <cite>Danza de dragones</cite>.
         </p>
         <p>
           Daenerys fue la hija póstuma del rey Aerys II Targaryen, naciendo en
@@ -105,6 +108,8 @@
             title="YouTube video player"
             frameborder="0"
             allowfullscreen
+            class="lazy"
+            data-src="https://www.youtube.com/embed/7I4LUKNwlyY"
           ></iframe>
           <figcaption>
             <cite>Daenerys Targaryen - The Queen</cite> por Ovik6280.
@@ -125,5 +130,8 @@
         <p>Aida María González Fernández</p>
       </div>
     </footer>
+
+    <script type="text/javascript" src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.6.1/dist/lazyload.min.js"></script>
   </body>
 </html>

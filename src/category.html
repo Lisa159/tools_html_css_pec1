@@ -11,9 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,800;1,400&display=swap"
       rel="stylesheet"
     />
-    <script type="text/javascript" src="app.js"></script>
   </head>
-  <body>
+  <body data-bg="./assets/img/map.jpg">
     <nav>
       <div id="logoContainer" href="">
         <a href="index.html" tabindex="-1"></a>
@@ -45,8 +44,11 @@
         <h2>Su historia a lo largo de los libros</h2>
         <figure>
           <img
-            src="./assets/img/books.jpg"
             alt="Foto de libros"
+            alt="A lazy image"
+            class="lazy"
+            src="./assets/img/books.jpg"
+            data-src="./assets/img/books.jpg"
             title="Foto de libros"
           />
           <figcaption>
@@ -82,5 +84,7 @@
         <p>Aida María González Fernández</p>
       </div>
     </footer>
+    <script type="text/javascript" src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.6.1/dist/lazyload.min.js"></script>
   </body>
 </html>

@@ -11,9 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,800;1,400&display=swap"
       rel="stylesheet"
     />
-    <script type="text/javascript" src="app.js"></script>
   </head>
-  <body>
+  <body data-bg="../assets/img/map.jpg">
     <nav>
       <div id="logoContainer" href="">
         <a href="index.html" tabindex="-1"></a>
@@ -42,7 +41,11 @@
     </nav>
     <main id="portada">
       <div class="imgContainer">
-        <img src="./assets/img/targaryen_shield.png" />
+        <img
+          src="./assets/img/targaryen_shield.png"
+          class="lazy"
+          data-src="./assets/img/targaryen_shield.png"
+        />
       </div>
       <div class="titleContainer">
         <h1>La vida de <span>Daenerys Targaryen</span></h1>
@@ -66,5 +69,8 @@
         <p>Aida María González Fernández</p>
       </div>
     </footer>
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.6.1/dist/lazyload.min.js"></script>
   </body>
 </html>
