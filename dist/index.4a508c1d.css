@@ -3328,6 +3328,10 @@ figure {
   max-width: 400px;
   width: 100%;
 }
+#presentacion h3,
+#presentacion p {
+  margin-bottom: 15px;
+}
 #presentacion iframe {
   -ms-grid-row-align: center;
       align-self: center;
