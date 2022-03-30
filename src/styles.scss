@@ -1,3 +1,7 @@
+@import "carbon-components/scss/components/button/button";
+@import "carbon-components/scss/components/list/list";
+@import "carbon-components/scss/components/tabs/tabs";
+
 :root {
   --color: rgb(0, 0, 0);
   --secondary-color: rgb(255 141 0 / 30%);
@@ -37,7 +41,7 @@ body {
 }
 
 /******** Navegation bar ********/
-nav {
+.header {
   display: flex;
   flex-direction: row;
   text-align: center;
@@ -138,13 +142,14 @@ nav {
             text-transform: uppercase;
             padding: 10px 20px;
             width: 100%;
+            font-size: 16px;
           }
           :hover {
             background-color: var(--secondary-color);
             border-radius: 4px;
           }
           :active {
-            background-color: var(--main-color) !important;
+            background-color: var(--contrast-color) !important;
             border-radius: 4px !important;
             color: #ffffff;
           }
@@ -167,7 +172,6 @@ nav {
     }
   }
 }
-
 .detailsContainer {
   display: flex;
   flex-direction: column;
@@ -178,7 +182,6 @@ nav {
 aside {
   margin: 20px;
 }
-
 /******** Main ********/
 main {
   flex: 1 0 auto;
@@ -239,8 +242,7 @@ main {
 #enlaces .linkContainer,
 #categoria .categoryContainer,
 #categoria article,
-#presentacion div,
-#presentacion article,
+#presentacion section,
 #details div,
 #details article,
 aside {
@@ -327,7 +329,8 @@ a:active {
   }
 }
 
-article {
+article,
+section {
   padding: 40px;
   margin-bottom: 20px;
   display: flex;
@@ -357,14 +360,12 @@ figure {
       width: 100%;
     }
   }
-  article.adaptation {
-    iframe {
-      align-self: center;
-      width: 100%;
-      height: 100%;
-      min-height: 300px;
-      margin-top: 20px;
-    }
+  iframe {
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    margin-top: 20px;
   }
 }
 
@@ -408,7 +409,7 @@ footer {
   #responsive {
     display: none !important;
   }
-  nav {
+  .header {
     height: 80px;
     #non-responsive {
       display: inline;
@@ -437,7 +438,7 @@ footer {
             border-radius: 4px;
           }
           :active {
-            background-color: var(--main-color) !important;
+            background-color: var(--contrast-color) !important;
             border-radius: 4px !important;
             color: #ffffff;
           }
@@ -453,7 +454,7 @@ footer {
     flex-direction: row;
   }
   #presentacion {
-    article.adaptation {
+    section {
       iframe {
         width: 540px;
         height: 295px;
