@@ -180,6 +180,9 @@ body {
 /******** Aside ********/
 aside {
   margin: 20px;
+  h3 {
+    margin-bottom: 15px;
+  }
 }
 /******** Main ********/
 main {
@@ -302,6 +305,10 @@ a:active {
       align-self: center;
       text-align: center;
     }
+    h2,
+    p {
+      margin-bottom: 15px;
+    }
     .routingBooks {
       display: flex;
       justify-content: space-between;
@@ -323,8 +330,13 @@ a:active {
     width: 100%;
     max-width: 200px;
   }
-  .chapters li:not(:last-child) {
-    margin-bottom: 5px;
+  .chapters {
+    li:not(:last-child) {
+      margin-bottom: 5px;
+    }
+    li {
+      line-height: 1.5em;
+    }
   }
 }
 
@@ -346,6 +358,13 @@ figure {
   margin: 0;
   text-align: center;
   margin: 20px 0;
+  figcaption {
+    margin-top: 10px;
+    font-size: 14px;
+    cite {
+      font-style: italic;
+    }
+  }
 }
 
 #presentacion {
